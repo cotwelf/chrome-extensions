@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome test",
+  "version": "1.0",
+  "description": "Prevents submission if specific words are typed into chat window",
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "css": ["style.css"],
+      "js": ["./scripts/content-script.js"]
+    }
+  ]
+}
